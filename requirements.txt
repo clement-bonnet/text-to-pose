@@ -1,0 +1,5 @@
+numpy
+torch
+pillow
+datasets
+transformers

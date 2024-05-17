@@ -45,3 +45,21 @@ def draw_pose_pil_center_crop(
     right = (width + resolution) / 2
     bottom = (height + resolution) / 2
     return pose_image.crop((left, top, right, bottom))
+
+
+def draw_pose_on_image(pose: Image.Image, image: Image.Image, alpha: float = 1.0) -> Image.Image:
+    pose_image = pose.convert("RGBA")
+    datas = pose_image.getdata()
+    new_data = []
+    for item in datas:
+        # Change all black (also shades of black) pixels to transparent
+        # Here, we define black as RGB values of (0, 0, 0)
+        if item[0] < 50 and item[1] < 50 and item[2] < 50:
+            # Change to transparent
+            new_data.append((255, 255, 255, 0))
+        else:
+            new_data.append((*item[:3], int(alpha * 255)))
+
+    pose_image.putdata(new_data)
+    combined_image = Image.alpha_composite(image.convert("RGBA"), pose_image)
+    return combined_image.convert("RGB")

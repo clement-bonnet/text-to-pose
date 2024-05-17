@@ -3,3 +3,7 @@ torch
 pillow
 datasets
 transformers
+diffusers
+accelerate
+hpsv2
+ipywidgets

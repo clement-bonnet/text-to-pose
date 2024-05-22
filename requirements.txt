@@ -7,3 +7,4 @@ diffusers
 accelerate
 hpsv2
 ipywidgets
+seaborn

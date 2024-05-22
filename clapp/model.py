@@ -161,7 +161,9 @@ class CLaPPModel(nn.Module, PyTorchModelHubMixin):
     def score(self, img_poses: Image.Image | list[Image.Image], text: str | list[str]):
         pose_inputs = self.processor(images=img_poses, return_tensors="pt")["pixel_values"]
         pose_features = self.clip_model.get_image_features(pose_inputs.to(self.device))
-        input_ids = self.processor(text=text, return_tensors="pt", truncation=True)["input_ids"]
+        input_ids = self.processor(text=text, return_tensors="pt", padding=True, truncation=True)[
+            "input_ids"
+        ]
         text_features = self.clip_model.get_text_features(input_ids.to(self.device))
         pose_embeddings = self.pose_projection.to(self.device)(pose_features)
         text_embeddings = self.text_projection.to(self.device)(text_features)

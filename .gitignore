@@ -160,6 +160,5 @@ cython_debug/
 #.idea/
 
 *.png
-*.pdf
 *.pkl
 *.pth

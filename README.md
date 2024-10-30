@@ -1,10 +1,10 @@
 # From Text to Pose to Image: Improving Diffusion Model Control and Quality
 
-- [Link to the paper](paper.pdf)
-- [Link to Text-To-Pose model](https://huggingface.co/clement-bonnet/t2p-transformer-v0)
-- [Link to CLaPP (Contrastive Language-Pose Pretraining) model](https://huggingface.co/clement-bonnet/clapp-v0)
-- [Link to Pose Adapter model](https://huggingface.co/clement-bonnet/t2i-adapter-sdxl-dwpose)
-- [Link to created COCO-2017 annotated dataset](https://huggingface.co/datasets/clement-bonnet/coco_val2017_100_text_image_pose)
+- [Link to the paper](paper.pdf) 📝
+- [Link to Text-To-Pose model](https://huggingface.co/clement-bonnet/t2p-transformer-v0) 🤗
+- [Link to CLaPP (Contrastive Language-Pose Pretraining) model](https://huggingface.co/clement-bonnet/clapp-v0) 🤗
+- [Link to Pose Adapter model](https://huggingface.co/clement-bonnet/t2i-adapter-sdxl-dwpose) 🤗
+- [Link to created COCO-2017 annotated dataset](https://huggingface.co/datasets/clement-bonnet/coco_val2017_100_text_image_pose) 🤗
 
 
 This repository contains the code for the paper _From Text to Pose to Image: Improving Diffusion Model Control and Quality_, published at the NeurIPS 2024 Workshop on Compositional Learning: Perspectives, Methods, and Paths Forward ([link to workshop](https://compositional-learning.github.io/)).
@@ -27,7 +27,6 @@ This repository contains the code for the paper _From Text to Pose to Image: Imp
     <figcaption>Text-to-pose transformer architecture</figcaption>
 </div>
 
-The text-to-pose model is accessible on HuggingFace: [link to model]().
 
 ## Pose Adapter
 

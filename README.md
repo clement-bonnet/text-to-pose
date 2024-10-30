@@ -9,13 +9,13 @@
 
 This repository contains the code for the paper _From Text to Pose to Image: Improving Diffusion Model Control and Quality_, published at the NeurIPS 2024 Workshop on Compositional Learning: Perspectives, Methods, and Paths Forward ([link to workshop](https://compositional-learning.github.io/)).
 
-<div align="center">
-  <figure style="display: inline-block; width: 45%; margin: 10px;">
-    <img src="images/fig_1_a.png" width="100%" style="max-width: 300px" />
+<div align="center" style="display: flex; justify-content: center; flex-wrap: nowrap;">
+  <figure style="margin: 10px; width: 45%;">
+    <img src="images/fig_1_a.png" style="width: 100%;" />
     <figcaption>Standard <em>text-to-image</em> generation</figcaption>
   </figure>
-  <figure style="display: inline-block; width: 45%; margin: 10px;">
-    <img src="images/fig_1_b.png" width="100%" style="max-width: 300px" />
+  <figure style="margin: 10px; width: 45%;">
+    <img src="images/fig_1_b.png" style="width: 100%;" />
     <figcaption>Ours: <em>text-to-pose-to-image</em> generation</figcaption>
   </figure>
 </div>

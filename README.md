@@ -1,6 +1,6 @@
 # From Text to Pose to Image: Improving Diffusion Model Control and Quality
 
-- [📝 Link to the paper](paper.pdf)
+- [📝 Link to the paper](https://arxiv.org/abs/2411.12872)
 - [🤗 Link to Text-To-Pose model](https://huggingface.co/clement-bonnet/t2p-transformer-v0)
 - [🤗 Link to CLaPP (Contrastive Language-Pose Pretraining) model](https://huggingface.co/clement-bonnet/clapp-v0)
 - [🤗 Link to Pose Adapter model](https://huggingface.co/clement-bonnet/t2i-adapter-sdxl-dwpose)
